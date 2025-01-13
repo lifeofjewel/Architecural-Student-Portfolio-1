@@ -60,7 +60,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Model 3
+      Project 3
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -72,7 +72,7 @@ document.querySelector("#app").innerHTML = `
               )
               .join("")}
           </div>
-          <h4 id="description">Project Placeholder</h4>
+          <h4 id="description">Project Placeholder!!</h4>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 const data = {
     name: "Julia Law",
-    bio: "Bachelor of Design in City Innovation - Class of 2027 Candidate.",
+    bio: "Bachelor of Design in City Innovation - Class of 2027 Candidate",
     contact: {
         email: "lifeofjewel@gmail.com",
         phone: "+1 (403) 918 9911",
