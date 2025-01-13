@@ -1,13 +1,13 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "John Doe",
-    bio: "Undergraduate Architectural Student at University of Calgary passionate about building tools to make homes more affordable.",
+    name: "Julia Law",
+    bio: "Bachelor of Design in City Innovation - Class of 2027 Candidate.",
     contact: {
-        email: "john.doe@gmail.com",
-        phone: "+12345678910",
-        linkedin: "https://www.linkedin.com/",
-        github: "https://www.github.com/",
+        email: "lifeofjewel@gmail.com",
+        phone: "+1 (403) 918 9911",
+        linkedin: "https://www.linkedin.com/in/julia-law-065311207/",
+        github: "https://www.github.com/lifeofjewel/",
     }
 }
 
