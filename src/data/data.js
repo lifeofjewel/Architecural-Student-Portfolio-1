@@ -1,10 +1,7 @@
 // CUSTOMIZE THIS FILE TO ADD YOUR OWN DATA
 
 const data = {
-    name: "Julia Law", {
-        font-family: "Georgia", Serif;
-        font-size: 30px;
-    }
+    name: "Julia Law", 
     bio: "Bachelor of Design in City Innovation - Class of 2027 Candidate",
     contact: {
         email: "lifeofjewel@gmail.com",
