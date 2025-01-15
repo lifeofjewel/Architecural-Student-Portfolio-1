@@ -67,13 +67,14 @@ a:hover {
   border-radius: 2px;
   color: white;
   z-index: 10;
-  box-shadow: 4px 4px 4px black
+  box-shadow: 4px 4px 4px #1d190f;
 }
 
 h1 {
   /* Heading font size */
   font-family: "Summer", cursive;
-  font-size: 4.5em;
+  text-shadow: 1px 1px 1px #1d190f;
+  font-size: 3.5em;
 }
 
 #projects {
