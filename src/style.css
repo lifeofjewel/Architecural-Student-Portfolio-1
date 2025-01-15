@@ -58,7 +58,7 @@ a:hover {
 #heading {
   /* Center heading content */
   position: top;
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 25px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +77,6 @@ h1 {
 
 #projects {
   /* Center project section */
-  font-size: 2.5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +101,7 @@ h1 {
 #model1,
 #model2,
 #model3 {
+  font-size: 1em;
   height: 300px;
   width: 300px;
   margin-right: 3em;
