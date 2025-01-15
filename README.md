@@ -54,7 +54,8 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
 
    - Scroll up this page and click the **Fork** button in the top-right corner. This creates a copy of the project under your GitHub account.
 
-2. **Clone the Repository:**
+2. **Open the Cloned Folder in VS Code:**
+   - Use the **File > Open Folder** option in VS Code to open the folder where you cloned the repository.  
 
    - Copy the repository URL from your forked repository (click the green "Code" button and copy the HTTPS link).
    - Open VS Code and open the terminal (use `Ctrl+` `` ` `` on Windows or `Cmd+` `` ` `` on macOS).
@@ -62,17 +63,18 @@ If you don’t already have a GitHub account, create one at [github.com](https:/
      ```bash
      git init
      git clone https://github.com/jugsidhu/Architectural-Student-Portfolio-2.git
+     cd [your forked(copied) repo link]
+     git remote add origin [your forked repo link]
      ```
-     ![alt text](/README-Images/image-7.png)
-
-3. **Open the Cloned Folder in VS Code:**
-   - Use the **File > Open Folder** option in VS Code to open the folder where you cloned the repository.  
+   - make sure that the last folder in the terminal path is that one containing all the code files
      ![alt text](/README-Images/image-8.png)
      ![alt text](/README-Images/image-9.png)
+     ![alt text](/README-Images/image-7.png)
 
 ---
 
 ### 5. Install Project Dependencies and Running Locally
+MAKE SURE THAT ALL COMMANDS AND UPDATES ARE RAN UNDER THE CORRECT TERMINAL PATH: THE LAST FOLDER IN THE TERMINAL PATH IS THE ONE CONTAINING ALL THE CODE FILES
 
 1. **Install Dependencies:**
 
