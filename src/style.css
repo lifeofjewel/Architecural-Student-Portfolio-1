@@ -57,9 +57,11 @@ a:hover {
 
 #heading {
   /* Center heading content */
-  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   flex-direction: column;
-  margin: 2em;
   justify-content: center;
   align-items: center;
   background-color: #Daa99a;
