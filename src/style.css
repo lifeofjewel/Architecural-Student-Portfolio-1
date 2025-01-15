@@ -57,7 +57,7 @@ a:hover {
 
 #heading {
   /* Center heading content */
-  position: fixed;
+  position: top;
   top: 0;
   left: 0;
   width: 100%;
@@ -72,7 +72,7 @@ a:hover {
 
 h1 {
   /* Heading font size */
-  font-family: "Fair Water Script", "Ink Free", cursive;
+  font-family: "Ink Free", cursive;
   font-size: 4.5em;
 }
 
