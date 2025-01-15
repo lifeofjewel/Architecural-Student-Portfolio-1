@@ -24,7 +24,7 @@
 #container {
   /* Main container padding */
   flex-grow: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
 #footer-items {
@@ -59,11 +59,14 @@ a:hover {
   /* Center heading content */
   position: top;
   margin: 0px 0px 25px 0px;
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #Daa99a;
   border-radius: 2px;
   color: #8d3427;
+  z-index: 10;
 }
 
 h1 {
