@@ -1,10 +1,10 @@
 :root {
   /* Global font, line-height, and colors */
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, 'Times New Roman', Times, serif;
   line-height: 1.5;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #1d190f;
+  background-color: #bd3427;
 }
 
 * {
@@ -37,7 +37,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
+  background-color: #Daa99a;
   color: white;
   z-index: 10;
 }
