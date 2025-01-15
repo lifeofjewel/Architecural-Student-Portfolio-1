@@ -4,7 +4,7 @@
   line-height: 1.5;
   font-weight: 400;
   color: #1d190f;
-  background-color: #ccd6d5;
+  background-image: radial-gradient(circle, #ccd6d5, #daa99a)
 }
 
 * {
@@ -67,7 +67,7 @@ a:hover {
   border-radius: 2px;
   color: white;
   z-index: 10;
-  box-shadow: 4px 4px 4px #1d190f;
+  box-shadow: 2px 2px 2px #ccd6d7;
 }
 
 h1 {
