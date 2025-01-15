@@ -69,6 +69,13 @@ a:hover {
   z-index: 10;
 }
 
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1 {
   /* Heading font size */
   font-family: "Playfair Display", sans-serif;
