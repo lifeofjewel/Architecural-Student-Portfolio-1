@@ -1,6 +1,6 @@
 :root {
   /* Global font, line-height, and colors */
-  font-family: Inter, system-ui, 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
   font-weight: 400;
   color: #1d190f;
@@ -62,6 +62,7 @@ a:hover {
   margin: 2em;
   justify-content: center;
   align-items: center;
+  background-color: #Daa99a;
 }
 
 h1 {
