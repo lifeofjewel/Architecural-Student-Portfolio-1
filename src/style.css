@@ -58,7 +58,7 @@ a:hover {
 #heading {
   /* Center heading content */
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   flex-direction: column;
