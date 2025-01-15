@@ -1,6 +1,6 @@
 :root {
   /* Global font, line-height, and colors */
-  font-family:"Cagliostro", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #1d190f;
@@ -55,13 +55,6 @@ a:hover {
   transition: 0.2s;
 }
 
-#cagliostro-regular {
-    font-family: "Cagliostro", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-
 #heading {
   /* Center heading content */
   position: top;
@@ -78,7 +71,7 @@ a:hover {
 
 h1 {
   /* Heading font size */
-  font-family: "Cagilostro", cursive;
+  font-family: "Playfair Display", sans-serif;
   padding-left: 5px;
   color: #8d3427;
   text-shadow: 1px 1px 1px #1d190f;
