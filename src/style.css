@@ -57,7 +57,7 @@ a:hover {
 
 #heading {
   /* Center heading content */
-  position: top;
+  position: fixed;
   margin: 0px 0px 25px 0px;
   width: 100%;
   display: flex;
@@ -81,7 +81,6 @@ h1 {
   font-family: "Playfair Display", serif;
   padding-left: 5px;
   color: #8d3427;
-  text-shadow: 1px 1px 1px #1d190f;
   font-size: 3.5em;
 }
 
