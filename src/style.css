@@ -95,9 +95,11 @@ h1 {
 
 #project-row {
   /* Row layout for projects */
+  font-size: medium;
+  font-style: italic;
   display: flex;
   justify-content: center;
-  padding-top: 5em;
+  padding-top: 4em;
 }
 
 .three-model {
@@ -110,7 +112,8 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  font-size: 1em;
+  font-size: 2em;
+  font-style: italic;
   height: 300px;
   width: 300px;
   margin-right: 3em;
