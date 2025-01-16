@@ -100,11 +100,11 @@ h1 {
   display: flex;
   justify-content: center;
   padding-top: 4em;
-  padding-left: 4em;
 }
 
 .three-model {
   /* Styling for project models */
+  padding: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@ h1 {
   margin-left: 6em;
   border-radius: 2px;
   border: 1px solid #ccc;
-  padding-left: 5px;
+  padding-left: 4em;
 }
 
 img {
