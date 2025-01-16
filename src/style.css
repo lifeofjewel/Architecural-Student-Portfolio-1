@@ -95,7 +95,7 @@ h1 {
 
 #project-row {
   /* Row layout for projects */
-  font-size: medium;
+  font-size: 16px;
   font-style: italic;
   display: flex;
   justify-content: center;
@@ -154,7 +154,7 @@ img {
   height: 4em;
   width: 35em;
   font-style: normal;
-  font-size: 2em;
+  font-size: 12px;
   font-weight: 100;
   margin-left: 2em;
   margin-top: 3em;
