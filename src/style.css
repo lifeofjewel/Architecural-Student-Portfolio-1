@@ -121,7 +121,7 @@ h1 {
   margin-left: 6em;
   border-radius: 2px;
   border: 1px solid #ccc;
-  padding-left: 4em;
+  padding-left: 2em;
 }
 
 img {
@@ -130,7 +130,6 @@ img {
   width: 120px;
   border-radius: 2px;
   margin: 0.5em;
-  padding-right: 5px;
 }
 
 #images {
@@ -140,7 +139,6 @@ img {
   align-items: center;
   height: 8em;
   margin-bottom: 2em;
-  padding-right: 5px;
 }
 
 #images-row {
@@ -149,7 +147,6 @@ img {
   align-items: center;
   align-items: center;
   position: relative;
-  padding-right: 5px;
 }
 
 #description {
