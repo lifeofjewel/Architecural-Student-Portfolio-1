@@ -96,6 +96,7 @@ h1 {
 #project-row {
   /* Row layout for projects */
   font-size: 16px;
+  font-family: "Playfair Display", serif;
   display: flex;
   justify-content: center;
   padding-top: 4em;
@@ -103,7 +104,6 @@ h1 {
 
 .three-model {
   /* Styling for project models */
-  font-family: "Playfair Display", serif;
   display: flex;
   justify-content: center;
   align-items: center;
