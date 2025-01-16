@@ -112,7 +112,7 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  font-size: 2em;
+  font-size: 4em;
   font-style: italic;
   height: 300px;
   width: 300px;
@@ -153,6 +153,8 @@ img {
   align-items: center;
   height: 4em;
   width: 35em;
+  font-style: normal;
+  font-size: 2em;
   font-weight: 100;
   margin-left: 2em;
   margin-top: 3em;
