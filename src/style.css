@@ -103,6 +103,7 @@ h1 {
 
 .three-model {
   /* Styling for project models */
+  font-family: "Playfair Display", serif;
   display: flex;
   justify-content: center;
   align-items: center;
