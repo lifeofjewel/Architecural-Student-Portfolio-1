@@ -96,7 +96,6 @@ h1 {
 #project-row {
   /* Row layout for projects */
   font-size: 16px;
-  font-style: italic;
   display: flex;
   justify-content: center;
   padding-top: 4em;
@@ -112,8 +111,6 @@ h1 {
 #model1,
 #model2,
 #model3 {
-  font-size: 4em;
-  font-style: italic;
   height: 300px;
   width: 300px;
   margin-right: 3em;
