@@ -57,7 +57,7 @@ a:hover {
 
 #heading {
   /* Center heading content */
-  position: top;
+  position: top, fixed;
   margin: 0px 0px 25px 0px;
   width: 100%;
   display: flex;
@@ -79,6 +79,7 @@ a:hover {
 h1 {
   /* Heading font size */
   font-family: "Playfair Display", serif;
+  font-weight: bold;
   padding-left: 5px;
   color: #8d3427;
   font-size: 3.5em;
@@ -96,7 +97,7 @@ h1 {
 #project-row {
   /* Row layout for projects */
   font-size: 16px;
-  font-family: "Playfair Display", serif;
+  font-weight: bold;
   font-style: italic;
   display: flex;
   justify-content: center;
