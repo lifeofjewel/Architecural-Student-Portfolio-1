@@ -2,7 +2,7 @@
   /* Global font, line-height, and colors */
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
-  font-weight: <100>;
+  font-weight: 100;
   font-style: normal;
   line-height: 1.5;
   font-weight: 400;
@@ -151,7 +151,7 @@ img {
   width: 35em;
   font-style: normal;
   font-size: 12px;
-  font-weight: 100;
+  font-weight: normal;
   margin-left: 2em;
   margin-top: 3em;
 }
