@@ -2,14 +2,14 @@ import "./style.css";
 import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
-const Prj1 = [
+const Prj1s = [
   "./DSGN 311/axon details - makeup.jpg",
   "./DSGN 311/Axon Rendered.jpg",
   "./DSGN 311/axon details - outlet.jpg",
   "./DSGN 311/render for the first page.jpg",
 ];
 
-const Prj2 = [
+const Prj2s = [
   "./treeDrawings/ecological plan 1to5000.png",
   "./treeDrawings/ecological plan 1to10000.png",
   "./treeDrawings/Julia - Mind Map.jpg",
