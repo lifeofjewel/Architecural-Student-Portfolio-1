@@ -25,7 +25,7 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      [DSGN 311] The Sharpest Corset
+      DSGN 311: The Sharpest Corset
         <div class="three-model">
           <div id="model1"></div>
         </div>
@@ -42,7 +42,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      [DSGN 303] Eco Flow Park
+      DSGN 303: Eco Flow Park
         <div class="three-model">
           <div id="model2"></div>
         </div>
@@ -60,7 +60,7 @@ document.querySelector("#app").innerHTML = `
       </div>
 
       <div id="project-row">
-      Project 3 - "Project Name"
+      DSGN 313: Cadavre Exquis
         <div class="three-model">
           <div id="model3"></div>
         </div>
@@ -72,7 +72,7 @@ document.querySelector("#app").innerHTML = `
               )
               .join("")}
           </div>
-          <h4 id="description">Project Placeholder!!</h4>
+          <h4 id="description">Inspired by a personal appreciation for the blending of global art and culture in the built environment, this collage curates a "ideal" street filled with building aesthetics from around the world mixed with varying art styles.</h4>
         </div>
       </div>
     </section>
