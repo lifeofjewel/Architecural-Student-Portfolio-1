@@ -2,18 +2,18 @@ import "./style.css";
 import data from "./data/data";
 import { createThreeScene } from "./threeScene";
 
-const cubes = [
-  "./cubeDrawings/cube1.webp",
-  "./cubeDrawings/cube2.webp",
-  "./cubeDrawings/cube3.webp",
-  "./cubeDrawings/cube4.webp",
+const Prj1 = [
+  "./DSGN 311/axon details - makeup.jpg",
+  "./DSGN 311/Axon Rendered.jpg",
+  "./DSGN 311/axon details - outlet.jpg",
+  "./DSGN 311/render for the first page.jpg",
 ];
 
-const trees = [
-  "./treeDrawings/tree1.jpg",
-  "./treeDrawings/tree2.jpg",
-  "./treeDrawings/tree3.jpg",
-  "./treeDrawings/tree4.jpg",
+const Prj2 = [
+  "./treeDrawings/ecological plan 1to5000.png",
+  "./treeDrawings/ecological plan 1to10000.png",
+  "./treeDrawings/Julia - Mind Map.jpg",
+  "./treeDrawings/process - final slide.png",
 ];
 
 document.querySelector("#app").innerHTML = `
@@ -25,37 +25,37 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      Project 1 - "Project Name"
+      [DSGN 311] The Sharpest Corset
         <div class="three-model">
           <div id="model1"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${prj1s
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
               )
               .join("")}
           </div>
-          <h4 id="description">Project placeholder.</h4>
+          <h4 id="description">A modelling and then animation project based around combining the words "hazardous" and "delicate".</h4>
         </div>
       </div>
 
       <div id="project-row">
-      Project 2 - "Project Name"
+      [DSGN 303] Eco Flow Park
         <div class="three-model">
           <div id="model2"></div>
         </div>
         <div id="images-description">
           <div id="images">
-            ${trees
+            ${Prj2
               .map(
-                (trees, index) =>
-                  `<img src="${trees}" alt="tree${index + 1}" />`
+                (prj2, index) =>
+                  `<img src="${prj2}" alt="prj2${index + 1}" />`
               )
               .join("")}
           </div>
-          <h4 id="description">Project Placeholder.</h4>
+          <h4 id="description">An ecological restoration project in the Inglewood-Ogden trainyard located in Calgary, Alberta.</h4>
         </div>
       </div>
 
