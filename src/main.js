@@ -48,7 +48,7 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${Prj2
+            ${Prj2s
               .map(
                 (prj2, index) =>
                   `<img src="${prj2}" alt="prj2${index + 1}" />`
