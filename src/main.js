@@ -66,9 +66,9 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${cubes
+            ${prj1s
               .map(
-                (cube, index) => `<img src="${cube}" alt="cube${index + 1}" />`
+                (prj1, index) => `<img src="${cube}" alt="prj1${index + 1}" />`
               )
               .join("")}
           </div>
