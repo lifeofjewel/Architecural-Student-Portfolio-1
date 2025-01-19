@@ -48,7 +48,7 @@ document.querySelector("#app").innerHTML = `
         </div>
         <div id="images-description">
           <div id="images">
-            ${Prj2s
+            ${prj2s
               .map(
                 (prj2, index) =>
                   `<img src="${prj2}" alt="prj2${index + 1}" />`
@@ -68,7 +68,7 @@ document.querySelector("#app").innerHTML = `
           <div id="images">
             ${prj1s
               .map(
-                (prj1, index) => `<img src="${cube}" alt="prj1${index + 1}" />`
+                (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
               )
               .join("")}
           </div>
