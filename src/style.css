@@ -149,12 +149,12 @@ img {
 
 #description {
   /* Center description content */
-  text-align: right;
-  font-style: normal;
+  text-align: left;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.4;
   margin: 1em auto;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 @media screen and (max-width: 768px) {
