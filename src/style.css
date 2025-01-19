@@ -145,8 +145,8 @@ h1 {
 
 img {
   /* Image dimensions and margin */
-  height: 120px;
-  width: 120px;
+  height: 100px;
+  width: 100px;
   border-radius: 2px;
   margin: 0.5em;
 }
