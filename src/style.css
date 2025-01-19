@@ -64,24 +64,22 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1em 2em; /* Adjusted padding syntax */
+  padding: 1em 2em; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #daa99a; /* Subtle background */
-  color: #8d3427; /* Text color */
-  z-index: 10; /* Ensure it stays above other content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  background-color: #daa99a; 
+  color: #8d3427; 
+  z-index: 10; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   /* Heading font styling */
-  margin: 0; /* Remove default margin for better alignment */
-  padding-left: 10px; /* Add slight padding */
-  color: #8d3427; /* Keep color consistent */
-  font-size: 2.5em; /* Slightly smaller for better layout */
-  font-weight: bold; /* Emphasize the text */
-  font-family: 'Georgia', serif; /* Add a sophisticated font */
+  margin: 0; 
+  padding-left: 10px; 
+  font-size: 2.5em; 
+  font-weight: bold; 
 }
 
 #heading p {
@@ -90,8 +88,6 @@ h1 {
   padding-left: 10px;
   font-size: 1.2em; /* Smaller for subtext */
   color: #4f2b24; /* Slightly darker color for contrast */
-  font-family: 'Arial', sans-serif; /* Cleaner font for bio text */
-}
 
 /* Optional: Adjust for small screens */
 @media (max-width: 768px) {
@@ -198,4 +194,5 @@ img {
     /* Adjust footer paragraph margin on smaller screens */
     margin: 5px 0;
   }
+}
 }
