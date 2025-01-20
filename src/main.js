@@ -16,6 +16,10 @@ const prj2s = [
   "./treeDrawings/process - final slide.png",
 ];
 
+const prj3s = [
+  "./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png"
+]
+
 document.querySelector("#app").innerHTML = `
   <main id="container">
     <section id="heading">
@@ -62,13 +66,20 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row">
       DSGN 313: Cadavre Exquis
         <div class="three-model">
-          <div id="model3"></div>
+          <div id="images"></div>
+          ${prj3s
+            .map(
+              (prj3, index) => `<img src="${prj3}" alt="prj3${index + 1}" />`
+            )
+            .join ("")
+            }
+          }
         </div>
         <div id="images-description">
           <div id="images">
-            ${prj1s
+            ${prj3s
               .map(
-                (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
+                (prj3, index) => `<img src="${prj3}" alt="prj1${index + 1}" />`
               )
               .join("")}
           </div>
