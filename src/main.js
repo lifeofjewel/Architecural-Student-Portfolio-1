@@ -76,7 +76,7 @@ document.querySelector("#app").innerHTML = `
           <div id="images"></div>
           ${prj3mains
             .map(
-              (prj3main, index) => `<img src="${prj3}" alt="prj3${index + 1}" />`
+              (prj3main, index) => `<img src="${prj3main}" alt="prj3main${index + 1}" />`
             )
             .join ("")
             }
