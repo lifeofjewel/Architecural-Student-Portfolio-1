@@ -45,8 +45,10 @@ document.querySelector("#app").innerHTML = `
       <div id="project-row">
         DSGN 313: Cadavre Exquis
         <div class="model1">
-          <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png" id="image1" class="swipe-image" alt="Image 1">
-          <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Tagged-Image.png" id="image2" class="swipe-image" alt="Image 2">
+          <a href="citations.html">
+           <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png" id="image1" class="swipe-image" alt="Image 1">
+           <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Tagged-Image.png" id="image2" class="swipe-image" alt="Image 2">
+          </a>
           <div class="swipe-controls">
             <button id="prev" class="swipe-button">Prev</button>
             <button id="next" class="swipe-button">Next</button>
