@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--Adds DM Sans font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DSGN 313 - Cadavre Exquis Citations | Julia's Portfolio</title>
+  <title>Julia Law - Cadavre Exquis Citations</title>
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
+   <!-- Root element where the application will be rendered -->
+   <div id="app"></div>
+   <!-- Imports the main JavaScript module for the application -->
+   <script type="module" src="/src/citation.js"></script>
   <header>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <!-- Add other pages if needed -->
+        <!-- Add other navigation links here if needed -->
       </ul>
     </nav>
   </header>
 
   <main id="container">
-    <section id="contact">
+    <section id="citation-list">
       <h1>Citations</h1>
       <p>The following are citations for DSGN 313: Cadavre Exquis</p>
       <ul>
-        <li>Pinterest. (n.d.). Soft Cloud wallpaper background. Retrieved January 13, 2025, from https://ca.pinterest.com/pin/12244230229218876/</li>
-        <li> Pinterest. (n.d.). Retrieved January 13, 2025, from https://ca.pinterest.com/pin/23995810509871083/ </li>
-        <li> Pinterest. (n.d). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/67131850689552729/ </li>
-        <li>Pinterest. (n.d.). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/76772368642344483/ </li>
-        <li> Pinterest. (n.d). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/17803361025442694/ </li>
-        <li>
-        Pinterest. (n.d). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/24347654229466133/ </li>
-        <li>
-        Pinterest. (n.d.). Gentrified Convenience Store. Retrieved January 14, 2025, from https://ca.pinterest.com/pin/4151824649661392/ </li>
-        <li>
-        Freestock Textures. (n.d.). Photos: Concrete. Retrieved January 14, 2025, from https://freestocktextures.com/photos-concrete/ </li>
-        <li>
-        Pinterest. (n.d). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/17521886046756851/ </li>
-        <li>   
-         Pinterest. (n.d.). Retrieved January 14, 2025, from https://ca.pinterest.com/pin/186617978305184525/ </li>
-         <li>
-         Pinterest. (n.d). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/7388786883738261/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/13229392652449609/ </li>
-         <li>
-         Pinterest. (n.d). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/68746248594/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/68748016803/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/5629568278719449/ </li>
-         <li>
-         Pinterest. (n.d.). Frederik’s Church, Copenhagen. Retrieved January 15, 2025, from https://ca.pinterest.com/pin/851954454528032500/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/1477812371307368/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/9710955441180270/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 15, 2025, from https://ca.pinterest.com/pin/633387442062897/ </li>
-         <li>
-         Pinterest. (n.d.). Half-Day Trip to Himeji Castle – Roaming Hills. Retrieved January 15, 2025, from https://ca.pinterest.com/pin/1098385796618030120/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 16, 2025, from https://ca.pinterest.com/pin/70437489460469/ </li>
-         <li>
-         Pinterest. (n.d). Retrieved January 16, 2025, from https://ca.pinterest.com/pin/6685099440992075/ </li>
-         <li>
-         Pinterest. (n.d.). Retrieved January 16, 2025, from "https://ca.pinterest.com/pin/5066618329523659/ </a></li>
-      </ul>
+        <li>Pinterest. (n.d.). Soft Cloud wallpaper background. Retrieved January 13, 2025, from <a href="https://ca.pinterest.com/pin/12244230229218876/" target="_blank">https://ca.pinterest.com/pin/12244230229218876/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 13, 2025, from <a href="https://ca.pinterest.com/pin/23995810509871083/" target="_blank">https://ca.pinterest.com/pin/23995810509871083/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/67131850689552729/" target="_blank">https://ca.pinterest.com/pin/67131850689552729/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/76772368642344483/" target="_blank">https://ca.pinterest.com/pin/76772368642344483/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/17803361025442694/" target="_blank">https://ca.pinterest.com/pin/17803361025442694/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/24347654229466133/" target="_blank">https://ca.pinterest.com/pin/24347654229466133/</a></li>
+        <li>Pinterest. (n.d.). Gentrified Convenience Store. Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/4151824649661392/" target="_blank">https://ca.pinterest.com/pin/4151824649661392/</a></li>
+        <li>Freestock Textures. (n.d.). Photos: Concrete. Retrieved January 14, 2025, from <a href="https://freestocktextures.com/photos-concrete/" target="_blank">https://freestocktextures.com/photos-concrete/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/17521886046756851/" target="_blank">https://ca.pinterest.com/pin/17521886046756851/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 14, 2025, from <a href="https://ca.pinterest.com/pin/186617978305184525/" target="_blank">https://ca.pinterest.com/pin/186617978305184525/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/7388786883738261/" target="_blank">https://ca.pinterest.com/pin/7388786883738261/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/13229392652449609/" target="_blank">https://ca.pinterest.com/pin/13229392652449609/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/68746248594/" target="_blank">https://ca.pinterest.com/pin/68746248594/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/68748016803/" target="_blank">https://ca.pinterest.com/pin/68748016803/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/5629568278719449/" target="_blank">https://ca.pinterest.com/pin/5629568278719449/</a></li>
+        <li>Pinterest. (n.d.). Frederik’s Church, Copenhagen. Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/851954454528032500/" target="_blank">https://ca.pinterest.com/pin/851954454528032500/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/1477812371307368/" target="_blank">https://ca.pinterest.com/pin/1477812371307368/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/9710955441180270/" target="_blank">https://ca.pinterest.com/pin/9710955441180270/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/633387442062897/" target="_blank">https://ca.pinterest.com/pin/633387442062897/</a></li>
+        <li>Pinterest. (n.d.). Half-Day Trip to Himeji Castle – Roaming Hills. Retrieved January 15, 2025, from <a href="https://ca.pinterest.com/pin/1098385796618030120/" target="_blank">https://ca.pinterest.com/pin/1098385796618030120/</a></li>
+        <li>Pinterest. (n.d.). Retrieved January 16, 2025, from <a href="https://ca.pinterest.com/pin/70437489460469/" target="_blank">https://ca.pinterest.com/pin/70437489460469/</a></li>
+        <li>Pinterest. (n.d). Retrieved January 16, 2025, from <a href="https://ca.pinterest.com/pin/6685099440992075/" target="_blank">https://ca.pinterest.com/pin/6685099440992075/</a></li>
+      </ul>      
     </section>
   </main>
 
