@@ -36,51 +36,9 @@ document.querySelector("#app").innerHTML = `
 
     <section id="projects">
       <div id="project-row">
-      DSGN 311: The Sharpest Corset
-        <div class="three-model">
-          <div id="model1"></div>
-        </div>
-        <div id="images-description">
-          <div id="images">
-            ${prj1s
-              .map(
-                (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">A modelling and then animation project based around combining the words "hazardous" and "delicate".</h4>
-        </div>
-      </div>
-
-      <div id="project-row">
-      DSGN 303: Eco Flow Park
-        <div class="three-model">
-          <div id="model2"></div>
-        </div>
-        <div id="images-description">
-          <div id="images">
-            ${prj2s
-              .map(
-                (prj2, index) =>
-                  `<img src="${prj2}" alt="prj2${index + 1}" />`
-              )
-              .join("")}
-          </div>
-          <h4 id="description">An ecological restoration project in the Inglewood-Ogden trainyard located in Calgary, Alberta.</h4>
-        </div>
-      </div>
-
-      <div id="project-row">
       DSGN 313: Cadavre Exquis
-        <div class="three-model">
-          <div id="images"></div>
-          ${prj3mains
-            .map(
-              (prj3main, index) => `<img src="${prj3main}" alt="prj3main${index + 1}" />`
-            )
-            .join ("")
-            }
-          }
+        <div class="model1">
+          <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png" id="model1" alt="Model 1 Image">
         </div>
         <div id="images-description">
           <div id="images">
@@ -93,8 +51,7 @@ document.querySelector("#app").innerHTML = `
           <h4 id="description">Inspired by a personal appreciation for the blending of global art and culture in the built environment, this collage curates a "ideal" street filled with building aesthetics from around the world mixed with varying art styles.</h4>
         </div>
       </div>
-    </section>
-
+    
     <ul id="footer-items">
       <li>Email: ${data.contact.email}</li>
       <li>Phone: ${data.contact.phone}</li>
@@ -109,6 +66,43 @@ document.querySelector("#app").innerHTML = `
 `;
 
 // Create three.js scenes for each
-createThreeScene("#model1", "/3DModels/project1/cube.obj");
-createThreeScene("#model2", "/3DModels/project2/tree.obj");
-createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+// // createThreeScene("#model1", "/3DModels/project1/cube.obj");
+// createThreeScene("#model2", "/3DModels/project2/tree.obj");
+// createThreeScene("#model3", "/3DModels/project3/cottage.obj");
+
+//  <div id="project-row">
+// DSGN 303: Eco Flow Park
+// <div class="three-model">
+//   <div id="model2"></div>
+// </div>
+// <div id="images-description">
+//   <div id="images">
+//     ${prj2s
+//       .map(
+//         (prj2, index) =>
+//           `<img src="${prj2}" alt="prj2${index + 1}" />`
+//       )
+//       .join("")}
+//   </div>
+//   <h4 id="description">An ecological restoration project in the Inglewood-Ogden trainyard located in Calgary, Alberta.</h4>
+// </div>
+// </div>
+
+// <div id="project-row">
+// DSGN 311: The Sharpest Corset
+// <div class="three-model">
+//   <div id="model3"></div>
+// </div>
+// <div id="images-description">
+//   <div id="images">
+//     ${prj1s
+//       .map(
+//         (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
+//       )
+//       .join("")}
+//   </div>
+//   <h4 id="description">A modelling and then animation project based around combining the words "hazardous" and "delicate".</h4>
+// </div>
+// </div>
+// </section>
+//
