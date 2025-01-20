@@ -127,6 +127,43 @@ h1 {
   margin: 1em auto;
   border: 1px solid #ccc;
 }
+.model1 {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.swipe-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.swipe-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swipe-button {
+  background-color: #4f2b24;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.swipe-button:hover {
+  background-color: #4f2b25;
+}
+
 
 #model1 img {
   max-width: 150px;
@@ -170,21 +207,20 @@ h1 {
 }
 
 #hello-modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+   display: flex;
+  align-items: center; 
+  justify-content: center; 
+  position: fixed;
+  z-index: 0;
   left: 0;
   top: 0;
-  width: 300px;
-  height: 300px;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with transparency */
-  align-items: center;
-  justify-content: center;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   font-family: "DM Sans", serif;
 }
 
 #modal-content {
-  background-color: white;
+  background-color: #8c7538;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
