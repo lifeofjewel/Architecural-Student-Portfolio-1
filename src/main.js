@@ -16,9 +16,16 @@ const prj2s = [
   "./treeDrawings/process - final slide.png",
 ];
 
+const prj3mains = [
+  "./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png",
+];
+
 const prj3s = [
-  "./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png"
-]
+  "./Project 3/711.jpg",
+  "./Project 3/Art.jpg",
+  "./Project 3/Church.jpg",
+  "./Project 3/Scale Figure.jpg",
+];
 
 document.querySelector("#app").innerHTML = `
   <main id="container">
@@ -67,9 +74,9 @@ document.querySelector("#app").innerHTML = `
       DSGN 313: Cadavre Exquis
         <div class="three-model">
           <div id="images"></div>
-          ${prj3s
+          ${prj3mains
             .map(
-              (prj3, index) => `<img src="${prj3}" alt="prj3${index + 1}" />`
+              (prj3main, index) => `<img src="${prj3}" alt="prj3${index + 1}" />`
             )
             .join ("")
             }
