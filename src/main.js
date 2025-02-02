@@ -128,28 +128,6 @@ document.getElementById("prev").addEventListener("click", () => {
 // Show the first image initially
 showImage(currentImageIndex);
 
-
-
-window.onload = () => {
-  // Show modal when the page loads
-  const modal = document.getElementById("hello-modal");
-  const closeModal = document.getElementById("close-modal");
-
-  modal.style.display = "flex"; // Show the modal
-
-  closeModal.onclick = () => {
-    modal.style.display = "none"; // Hide the modal when close button is clicked
-  }
-
-  // Close the modal if user clicks outside of the modal content
-  window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none"; // Hide modal if outside area is clicked
-    }
-  }
-};
-
-
 // Create three.js scenes for each
 // // createThreeScene("#model1", "/3DModels/project1/cube.obj");
 // createThreeScene("#model2", "/3DModels/project2/tree.obj");
