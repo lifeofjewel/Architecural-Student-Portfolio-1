@@ -71,6 +71,29 @@ document.querySelector("#app").innerHTML = `
 Questions like this inspire me, leading me to imagine a world in which these expressions of culture come together in the form of one cohesive environment. The cohesion does not just end at the production of varying built forms but instead continues to the inclusion of art, adding colour to the streets and environment. Personally, this idea inspires me, motivating decision making practices that allow for the inclusion of various cultural expressions. In a broad scope, this concept makes me want to travel the world, seeing these different ideas in their true flesh. In a smaller scale, this imaginative process inspires design choices in work, an appreciation of global culture, and the desire to invite all different sorts of expression into my day to day.
           </h4>
         </div>
+      <div id="project-row">
+      DSGN 313: Interop
+      <div class="three-model">
+        <div id="model2"></div> <!-- Three.js model container -->
+      </div>
+      <div id="images-description">
+        <div id="images">
+          ${prj2s
+            .map(
+              (prj2, index) =>
+                `<img src="${prj2}" alt="prj2${index + 1}" />`
+            )
+            .join("")}
+        </div>
+        <h4 id="description">A project detailing "Hundun", a little legend from Riot Games' League of Legends: Teamfight Tactics.</h4>
+      </div>
+    </div>
+
+    <script>
+      // Initialize Three.js scene for project 2
+      createThreeScene("#model2", "/3DModels/project2/tree.obj");
+    </script>
+
       </div>
 
       <ul id="footer-items">
