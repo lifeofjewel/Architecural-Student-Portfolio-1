@@ -26,11 +26,41 @@
 #container {
   /* Main container padding */
   flex-grow: 1;
-  padding: 15px;
+  padding: 10px;
+  padding-top: 3.5em; /* Added padding to account for fixed header */
+  padding-bottom: 3.5em; /* Added padding to account for fixed footer */
 }
 
+/* ==== Thinned Header ==== */
+#heading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5em 1em;  /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #daa99a;
+  color: #8d3427;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em; /* Slightly smaller */
+  font-weight: bold;
+}
+
+#heading p {
+  margin: 0;
+  font-size: 1em; /* Smaller */
+  color: #4f2b24;
+}
+
+/* ==== Thinner Footer ==== */
 #footer-items {
-  /* Footer styling and positioning */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -38,117 +68,115 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem; /* Reduced padding */
   background-color: #daa99a;
   color: #8d3427;
   z-index: 10;
+  font-size: 0.9em; /* Smaller text */
 }
 
-a {
-  /* Link styling */
-  color: #8c753b;
-  text-decoration: none;
+/* ==== Secondary Project Images Smaller ==== */
+#images img {
+  max-width: 400px;  /* Reduced size */
+  max-height: 400px; /* Reduced size */
+  border-radius: 4px;
+  margin: 0.3em;
+  object-fit: cover;
 }
 
-a:hover {
-  /* Link hover effects */
-  color: #8c7538;
-  text-decoration: underline;
-  transition: 0.2s;
-}
 
-#heading {
-  /* Fixed header styling */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #daa99a;
-  color: #8d3427;
-  z-index: 10;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  /* Heading font styling */
-  margin: 0;
-  padding-left: 10px;
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-#heading p {
-  /* Subheading or bio styling */
-  margin: 0;
-  padding-left: 10px;
-  font-size: 1.2em;
-  color: #4f2b24;
-}
-
+/* ==== Project Row Formatting ==== */
 #projects {
-  /* Center project section */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10em;
+  margin-bottom: 7em; /* Adjusted spacing */
 }
 
+/* Adjust the container to align 3D models and images side-by-side */
 #project-row {
-  /* Row layout for projects */
-  font-size: 16px;
-  font-weight: bold;
-  font-style: italic;
   display: flex;
-  padding-top: 8em;
+  justify-content: space-between; /* Space out the items */
+  align-items: flex-start; /* Align items at the top */
   width: 100%;
+  padding-top: 7em;
+  margin-bottom: 3em; /* Ensure space between rows */
 }
 
 .three-model {
-  /* Styling for project models */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 60%; /* Allocate 60% of space for the 3D models */
+  gap: 10px;
 }
 
-#model1,
-#model2,
-#model3 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 650px;
-  height: 100%;
-  width: 100%;
-  margin: 1em auto;
+#model2, #model3, #model4 {
+  width: 300px;
+  height: 300px;
   border: 1px solid #ccc;
+  display: block;
 }
+
+#model2 canvas, #model3 canvas, #model4 canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Update #images-description to center the content */
+#images-description {
+  display: flex;
+  flex-direction: row;  /* Align images and text side by side */
+  justify-content: center;  /* Center the content horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px;  /* Add space between images and text */
+  width: 100%;  /* Ensure full width */
+  padding: 0 20px;  /* Add some padding to avoid the images being too close to the edges */
+}
+
+/* Update .imagesinterop to be centered */
+.imagesinterop {
+  width: 500px;  /* Keep the width of images container */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 0 auto;  /* Center this container */
+}
+
 .model1 {
   position: relative;
-  width: 100%;
-  height: 800px;
+  width: 80%; /* Make it smaller, adjust the width as needed */
+  max-width: 800px; /* Limit the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the model */
+}
+
+
+#images-description {
+  display: flex;
+  font-size: 16px;
+  font-weight: normal;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 100px; /* Space between the models and images */
 }
 
 .swipe-image {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: none; /* Initially hide images */
   object-fit: cover;
-  display: none;
 }
 
 .swipe-controls {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .swipe-button {
@@ -156,7 +184,7 @@ h1 {
   color: white;
   border: none;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 8px 12px;
   cursor: pointer;
 }
 
@@ -164,112 +192,30 @@ h1 {
   background-color: #4f2b25;
 }
 
-#model1 img {
-  max-width: 150px;
-  max-height: 150px;
-  width: auto;
-  height: auto;
-  border-radius: 4px;
-  margin: 1em auto;
-  object-fit: cover;
-}
-
-#images img {
-  /* Image dimensions and margin */
-  max-width: 150px; 
-  max-height: 150px;
-  width: auto;
-  height: auto;
-  border-radius: 4px;
-  margin: 0.5em;
-  object-fit: cover;
-}
-
-#images {
-  /* Center image container */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; /* Allow images to wrap */
-  gap: 10px; /* Add space between images */
-}
-
-#description {
-  /* Center description content */
-  text-align: left;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.4;
-  margin-top: 1em; 
-  margin-left: 1em;
-  max-width: 500px;
-}
-
-#citation-list {
-  text-align: left;
-  font-weight: normal;
-  font-size: 14px;
-  margin-left: 1em;
-}
-
-#hello-modal {
-   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  position: fixed;
-  z-index: 0;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  font-family: "DM Sans", serif;
-}
-
-#modal-content {
-  background-color: #8c7538;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  position: relative;
-}
-
-#close-modal {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-
-
+/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  #footer-items {
-    /* Responsive footer styling */
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  #footer-items p {
-    margin: 5px 0;
-  }
-
   #project-row {
     flex-direction: column;
     align-items: center;
   }
 
-  #model1,
-  #model2,
-  #model3 {
-    height: 150px;
-    width: 150px;
+  .three-model {
+    width: 100%;
+    margin-bottom: 20px; /* Add spacing between models and images */
   }
 
-  img {
-    max-width: 80px;
-    max-height: 80px;
+  .imagesinterop {
+    width: 100%;
+  }
+
+  #model2, #model3, #model4 {
+    width: 120px;
+    height: 120px;
+  }
+
+  #images img {
+    max-width: 100px;
+    max-height: 100px;
   }
 
   #description {

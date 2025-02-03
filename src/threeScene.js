@@ -1,95 +1,52 @@
-import * as THREE from "three";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import * as THREE from 'three';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'; // Import OrbitControls
 
-export function createThreeScene(containerSelector, objPath) {
-  // Target container for the 3D model
-  const container = document.querySelector(containerSelector);
-
-  // Initialize scene, camera, and renderer
+export function createThreeScene(elementId, modelPath) {
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xd3d3d3);
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.querySelector(elementId).appendChild(renderer.domElement);
 
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    container.clientWidth / container.clientHeight,
-    0.1,
-    1000
-  );
-  camera.position.set(2, 2, 5);
-
-  const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(container.clientWidth, container.clientHeight);
-  container.appendChild(renderer.domElement);
-
-  // Add grid helper
-  const gridHelper = new THREE.GridHelper(10, 10, 0x000000, 0x808080);
-  scene.add(gridHelper);
-
-  // Add lighting
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-  directionalLight.position.set(5, 5, 5);
-  scene.add(directionalLight);
-
-  const ambientLight = new THREE.AmbientLight(0x404040, 1);
-  scene.add(ambientLight);
-
-  const pointLight = new THREE.PointLight(0xffffff, 0.8, 100);
-  pointLight.position.set(2, 5, 5);
-  scene.add(pointLight);
-
-  // Add OrbitControls
+  // Add OrbitControls to make the scene navigable
   const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true; // Smooth rotation
-  controls.dampingFactor = 0.05;
-  controls.target.set(0, 0, 0);
-  controls.update();
+  controls.enableDamping = true; // Smooth out movement
+  controls.dampingFactor = 0.25; // Controls the smoothing factor
+  controls.screenSpacePanning = false; // Don't allow panning in screen space
+  controls.maxPolarAngle = Math.PI / 2; // Limit vertical rotation
 
-  // Load OBJ file
-  const objLoader = new OBJLoader();
+  // Load the 3D model
+  const loader = new OBJLoader();
+  loader.load(modelPath, (obj) => {
+    // Scale the object to fit within the container
+    obj.scale.set(1, 1, 1);  // Adjust scale to make it fit
+    scene.add(obj);
+  });
 
-  objLoader.load(
-    objPath,
-    (object) => {
-      object.traverse((child) => {
-        if (child.isMesh) {
-          child.geometry.computeVertexNormals();
-          child.material = new THREE.MeshStandardMaterial({
-            color: 0x000000, // Default material color
-            wireframe: true, // toggle wireframe
-            transparent: true, // toggle transparency
-            opacity: 0.5, // change level of transparency
-          });
-        }
-      });
+  // Set up lighting
+  const light = new THREE.AmbientLight(0xffffff, 1); // Ambient light for the scene
+  scene.add(light);
 
-      object.position.set(0, 0, 0);
-      object.scale.set(1, 1, 1);
+  // Position the camera
+  camera.position.set(0, 1, 5); // Adjust the initial camera position
 
-      scene.add(object);
-    },
-    (xhr) => {
-      console.log(`Loading: ${(xhr.loaded / xhr.total) * 100}% loaded`);
-    },
-    (error) => {
-      console.error("An error occurred while loading the model:", error);
-    }
-  );
+  // Resize the canvas if the window is resized
+  window.addEventListener('resize', () => {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+  });
 
   // Animation loop
   function animate() {
     requestAnimationFrame(animate);
-    controls.update();
+
+    // Update controls
+    controls.update(); // Only required if controls.enableDamping or controls.auto-rotation are enabled
+
     renderer.render(scene, camera);
   }
+
   animate();
-
-  // Handle window resize
-  window.addEventListener("resize", () => {
-    camera.aspect = container.clientWidth / container.clientHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(container.clientWidth, container.clientHeight);
-  });
-
-  return { scene, camera, renderer };
 }
