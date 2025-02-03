@@ -48,6 +48,7 @@ document.querySelector("#app").innerHTML = `
       <!-- DSGN 313: Cadavre Exquis -->
       <div id="project-row">
         <h2>DSGN 313: Cadavre Exquis</h2>
+       <div class="model-and-images-container>
         <div class="model1">
           <a href="./pages/citations.html">
             <img src="./Project 3/DSGN313_W25_Law-Julia_A1_Cadavre-Exquis.png" id="image1" class="swipe-image" alt="Image 1">
@@ -58,7 +59,7 @@ document.querySelector("#app").innerHTML = `
             <button id="next" class="swipe-button">Next</button>
           </div>
         </div>
-        <div id="images-description">
+        <div class ="image-container">
           <div id="images">
             ${prj3s.map((prj3, index) => `
               <a href="${prj3.link}" target="_blank">
@@ -72,27 +73,32 @@ document.querySelector("#app").innerHTML = `
           </h4>
         </div>
       </div>
+    </div>
 
       <!-- DSGN 313: Interop -->
       <div id="project-row">
         <h2>DSGN 313: Interop</h2>
-        <div class="three-model">
-          <div id="model2"></div>
-          <div id="model3"></div>
-          <div id="model4"></div>
-        </div>
-        <div id="images-description">
-  <div id="imagesinterop">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck.png" id="image3" class="swipe-image" alt="Image 3">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck2.png" id="image4" class="swipe-image" alt="Image 4">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck3.png" id="image5" class="swipe-image" alt="Image 5">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck4.png" id="image6" class="swipe-image" alt="Image 6">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck5.png" id="image7" class="swipe-image" alt="Image 7">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck6.png" id="image8" class="swipe-image" alt="Image 8">
-    <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck7.png" id="image9" class="swipe-image" alt="Image 9">
-         <div class="swipe-controls">
-          <button id="prev-interop" class="swipe-button">Prev</button>
-          <button id="next-interop" class="swipe-button">Next</button>
+        <div class="model-and-images-container>
+          <div class="three-model">
+            <div id="model2"></div>
+            <div id="model3"></div>
+            <div id="model4"></div>
+          </div>
+            <div class ="image-container">
+              <div id="imagesinterop">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck.png" id="image3" class="swipe-image" alt="Image 3">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck2.png" id="image4" class="swipe-image" alt="Image 4">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck3.png" id="image5" class="swipe-image" alt="Image 5">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck4.png" id="image6" class="swipe-image" alt="Image 6">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck5.png" id="image7" class="swipe-image" alt="Image 7">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck6.png" id="image8" class="swipe-image" alt="Image 8">
+                <img src="./treeDrawings/DSGN313_W25_Law-Julia_A2_SlideDeck7.png" id="image9" class="swipe-image" alt="Image 9">
+                    <div class="swipe-controls">
+                      <button id="prev-interop" class="swipe-button">Prev</button>
+                      <button id="next-interop" class="swipe-button">Next</button>
+                    </div>
+              </div>
+          </div>
         </div>
       <div>
           <h4 id="description">A project detailing "Hundun", a little legend from Riot Games' League of Legends: Teamfight Tactics.</h4>
@@ -155,49 +161,3 @@ document.getElementById("prev-interop").addEventListener("click", () => {
 
 // Show the first image initially for Interop section
 showImageInterop(currentImageIndexInterop);
-
-
-
-
-
-// Create three.js scenes for each
-// // createThreeScene("#model1", "/3DModels/project1/cube.obj");
-;
-// createThreeScene("#model3", "/3DModels/project3/cottage.obj");
-
-//  <div id="project-row">
-// DSGN 303: Eco Flow Park
-// <div class="three-model">
-//   <div id="model2"></div>
-// </div>
-// <div id="images-description">
-//   <div id="images">
-//     ${prj2s
-//       .map(
-//         (prj2, index) =>
-//           `<img src="${prj2}" alt="prj2${index + 1}" />`
-//       )
-//       .join("")}
-//   </div>
-//   <h4 id="description">An ecological restoration project in the Inglewood-Ogden trainyard located in Calgary, Alberta.</h4>
-// </div>
-// </div>
-
-// <div id="project-row">
-// DSGN 311: The Sharpest Corset
-// <div class="three-model">
-//   <div id="model3"></div>
-// </div>
-// <div id="images-description">
-//   <div id="images">
-//     ${prj1s
-//       .map(
-//         (prj1, index) => `<img src="${prj1}" alt="prj1${index + 1}" />`
-//       )
-//       .join("")}
-//   </div>
-//   <h4 id="description">A modelling and then animation project based around combining the words "hazardous" and "delicate".</h4>
-// </div>
-// </div>
-// </section>
-//

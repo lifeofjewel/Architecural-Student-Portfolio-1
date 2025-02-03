@@ -1,5 +1,4 @@
 :root {
-  /* Global font, line-height, and colors */
   font-family: "DM Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -10,56 +9,51 @@
 }
 
 * {
-  /* Reset margins, padding, and set box-sizing */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 #app {
-  /* Flex container for the app root */
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
 #container {
-  /* Main container padding */
   flex-grow: 1;
   padding: 10px;
-  padding-top: 3.5em; /* Added padding to account for fixed header */
-  padding-bottom: 3.5em; /* Added padding to account for fixed footer */
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
 }
 
-/* ==== Thinned Header ==== */
 #heading {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.5em 1em;  /* Reduced padding */
+  padding: 1em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #daa99a;
   color: #8d3427;
   z-index: 10;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   margin: 0;
-  font-size: 2em; /* Slightly smaller */
+  font-size: 3em;
   font-weight: bold;
 }
 
 #heading p {
   margin: 0;
-  font-size: 1em; /* Smaller */
+  font-size: 2em;
   color: #4f2b24;
 }
 
-/* ==== Thinner Footer ==== */
 #footer-items {
   position: fixed;
   bottom: 0;
@@ -68,107 +62,124 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem; /* Reduced padding */
+  padding: 2em 1em;
   background-color: #daa99a;
   color: #8d3427;
   z-index: 10;
-  font-size: 0.9em; /* Smaller text */
+  font-size: 1em;
 }
 
-/* ==== Secondary Project Images Smaller ==== */
+#projects {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7em;
+}
+
+#project-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 7em;
+  margin-bottom: 3em;
+}
+/* Container for Models and Images */
+.model-and-images-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 2em; /* Adds space between the models and images */
+  margin-bottom: 3em; /* Adds space below */
+}
+
+/* Container for Models and Images */
+.model-and-images-container {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  gap: 2em; /* Adds space between the model and the images */
+  margin-bottom: 3em; /* Adds space below */
+}
+
+/* Model1 styling */
+#model1, #model2, #model3, #model4 {
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height if needed */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd; /* Optional: Add background color to the model */
+}
+
+/* Image Container */
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 500px; /* Adjusts max width */
+  padding-top: 10px;
+}
+
+#images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for images */
+  gap: 1em; /* Adds space between grid items */
+  justify-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
 #images img {
-  max-width: 400px;  /* Reduced size */
-  max-height: 400px; /* Reduced size */
+  width: 100%;
+  max-width: 250px; /* Adjust image size */
+  height: auto;
   border-radius: 4px;
-  margin: 0.3em;
   object-fit: cover;
 }
 
-
-/* ==== Project Row Formatting ==== */
-#projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 7em; /* Adjusted spacing */
+#description {
+  margin-top: 1em;
+  font-size: 1.2em;
+  color: #4f2b24;
+  text-align: center;
 }
 
-/* Adjust the container to align 3D models and images side-by-side */
-#project-row {
-  display: flex;
-  justify-content: space-between; /* Space out the items */
-  align-items: flex-start; /* Align items at the top */
-  width: 100%;
-  padding-top: 7em;
-  margin-bottom: 3em; /* Ensure space between rows */
-}
-
-.three-model {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%; /* Allocate 60% of space for the 3D models */
-  gap: 10px;
-}
-
-#model2, #model3, #model4 {
-  width: 300px;
-  height: 300px;
-  border: 1px solid #ccc;
-  display: block;
-}
 
 #model2 canvas, #model3 canvas, #model4 canvas {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* Update #images-description to center the content */
-#images-description {
+/* Image Container for Interop */
+#imagesinterop {
   display: flex;
-  flex-direction: row;  /* Align images and text side by side */
-  justify-content: center;  /* Center the content horizontally */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px;  /* Add space between images and text */
-  width: 100%;  /* Ensure full width */
-  padding: 0 20px;  /* Add some padding to avoid the images being too close to the edges */
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
 }
 
-/* Update .imagesinterop to be centered */
-.imagesinterop {
-  width: 500px;  /* Keep the width of images container */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin: 0 auto;  /* Center this container */
+#imagesinterop img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
 }
 
-.model1 {
-  position: relative;
-  width: 80%; /* Make it smaller, adjust the width as needed */
-  max-width: 800px; /* Limit the maximum width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the model */
+.imagesinterop img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 4px;
+  margin: 0.3em;
+  object-fit: cover;
 }
 
-
-#images-description {
-  display: flex;
-  font-size: 16px;
-  font-weight: normal;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 100px; /* Space between the models and images */
-}
-
+/* Swipe Image Settings */
 .swipe-image {
   width: 100%;
   height: auto;
-  display: none; /* Initially hide images */
+  display: none;
   object-fit: cover;
 }
 
@@ -201,7 +212,7 @@ h1 {
 
   .three-model {
     width: 100%;
-    margin-bottom: 20px; /* Add spacing between models and images */
+    margin-bottom: 20px;
   }
 
   .imagesinterop {
@@ -209,16 +220,16 @@ h1 {
   }
 
   #model2, #model3, #model4 {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   #images img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 120px;
+    max-height: 120px;
   }
 
   #description {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
