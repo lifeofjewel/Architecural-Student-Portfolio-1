@@ -145,36 +145,6 @@ h1 {
   text-align: center;
 }
 
-
-#model2 canvas, #model3 canvas, #model4 canvas {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Image Container for Interop */
-#imagesinterop {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  max-width: 700px;
-}
-
-#imagesinterop img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-}
-
-.imagesinterop img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 4px;
-  margin: 0.3em;
-  object-fit: cover;
-}
-
 /* Swipe Image Settings */
 .swipe-image {
   width: 100%;
